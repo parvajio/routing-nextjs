@@ -9,9 +9,15 @@ export const metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}){
     return (
         <html lang="en">
+            <header style={{backgroundColor: "lightblue", padding:"1rem"}}>
+                <div>header</div>
+            </header>
             <body>
                 {children}
             </body>
+            <footer style={{backgroundColor: "lightgreen", padding:"1rem"}}>
+                footer
+            </footer>
         </html>
     )
 }
