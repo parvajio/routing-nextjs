@@ -1,4 +1,4 @@
-import { title } from "process"
+import "@/app/global.css";
 
 export const metadata = {
     title: "Next.js",
@@ -6,18 +6,18 @@ export const metadata = {
 }
 
 
-export default function RootLayout({children}: {children: React.ReactNode}){
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <header style={{backgroundColor: "lightblue", padding:"1rem"}}>
-                <div>header</div>
-            </header>
             <body>
+                <header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
+                    <div>header</div>
+                </header>
                 {children}
+                <footer className="font-bold" style={{ backgroundColor: "lightgreen", padding: "1rem" }}>
+                    footer
+                </footer>
             </body>
-            <footer style={{backgroundColor: "lightgreen", padding:"1rem"}}>
-                footer
-            </footer>
         </html>
     )
 }
