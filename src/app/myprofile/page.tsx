@@ -1,5 +1,7 @@
 export const metadata = {
-    title: "My Profile"
+    title: {
+        absolute: 'My Profile',
+    }
 }
 
 export default function MyProfile() {

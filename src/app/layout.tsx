@@ -1,7 +1,10 @@
 import "@/app/global.css";
 
 export const metadata = {
-    title: "Next.js",
+    title: {
+        default: "Next.js App with Custom Layout",
+        template: "%s | Next.js App",
+    },
     description: "A Next.js application with a custom layout",
 }
 
