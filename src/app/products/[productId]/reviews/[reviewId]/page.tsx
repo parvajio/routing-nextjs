@@ -9,7 +9,7 @@ const page = async ({ params }: { params: Promise<{ productId: string; reviewId:
 
   const randm = getRandomInt(2);
   if(randm == 1){
-    throw new Error("Something went wrong");
+    throw new Error("Error in review Id");
   }
 
   const { productId, reviewId } = await params;

@@ -1,5 +1,5 @@
 "use client"
 
-export default function ErrorBoundaay(){
-    return <h1 className="text-red-500 font-bold">Error in review page</h1>
+export default function ErrorBoundaay({error}: {error: Error}){
+    return <h1 className="text-red-500 font-bold">{error.message}</h1>
 }
