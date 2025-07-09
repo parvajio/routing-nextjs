@@ -19,7 +19,7 @@ const page = async ({ params }: { params: Promise<{ productId: string; reviewId:
   }
 
   return (
-    <div>review {reviewId} and product {productId}</div>
+    <div>review {reviewId} and product {productId} h</div>
   )
 }
 
