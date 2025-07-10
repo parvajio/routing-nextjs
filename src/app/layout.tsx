@@ -1,4 +1,5 @@
 import "@/app/global.css";
+import { ErrorWrapper } from "./error-wrapper";
 
 export const metadata = {
     title: {
@@ -16,7 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <header style={{ backgroundColor: "lightblue", padding: "1rem" }}>
                     <div>header</div>
                 </header>
-                {children}
+                <ErrorWrapper>
+                    {children}
+                </ErrorWrapper>
                 <footer className="font-bold" style={{ backgroundColor: "lightgreen", padding: "1rem" }}>
                     footer
                 </footer>
