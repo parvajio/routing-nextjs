@@ -2,12 +2,11 @@
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-const found = () => {
+const NotFound = () => {
 
   const pathname = usePathname();
   const productId = pathname?.split('/')[2];
   const reviewId = pathname?.split('/')[4];
-
 
   return (
     <div>
@@ -16,4 +15,4 @@ const found = () => {
   )
 }
 
-export default found
+export default NotFound

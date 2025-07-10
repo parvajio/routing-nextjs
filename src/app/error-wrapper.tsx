@@ -1,7 +1,5 @@
 "use client";
 
-import "@/app/global.css"
-
 import { useState } from "react";
 
 const ErrorSimulator = ({ message = "An error occored" }: { message?: string }) => {

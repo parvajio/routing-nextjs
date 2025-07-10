@@ -16,7 +16,7 @@ export default function ErrorBoundaay({ error, reset }: { error: Error; reset: (
     return (
         <>
             <h1 className="text-red-500 font-bold">{error.message}</h1>
-            <button className="text-blue-400" onClick={reset}>try</button>
+            <button className="text-blue-400" onClick={reload}>try</button>
         </>
     )
 }
