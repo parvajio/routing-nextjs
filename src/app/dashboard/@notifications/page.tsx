@@ -1,9 +1,17 @@
 import React from 'react'
 import { Card } from '../../../../components/card'
+import Link from 'next/link'
 
 const Notifications = () => {
   return (
-    <Card>Notifications</Card>
+    <>
+      <Card>
+        <div>
+          Notifications
+        </div>
+        <Link href={"/dashboard/archive"}>Archive</Link>
+      </Card>
+    </>
   )
 }
 
