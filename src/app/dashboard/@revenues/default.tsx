@@ -3,7 +3,7 @@ import { Card } from '../../../../components/card'
 
 const RevenueMetrics = () => {
   return (
-    <Card>Revenue Metrics</Card>
+    <Card>Revenue Metrics Default</Card>
   )
 }
 
