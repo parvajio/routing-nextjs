@@ -6,6 +6,7 @@ const F1Page = () => {
         <>
             <div>F1 Page</div>
             <Link href={"/f1/f2"}>f2</Link>
+            <Link href={"/f3"}>f3</Link>
         </>
     )
 }
